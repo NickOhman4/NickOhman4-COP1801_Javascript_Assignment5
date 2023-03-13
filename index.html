@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Module 5</title>
+</head>
+
+<body>
+    <p id="dog"></p>
+    <p id="dog2"></p>
+
+    <script>
+        var myDog = new Object();
+        myDog.name = "Ace Hart Private Eye Dog";
+        myDog.breed = "German Shepard";
+        myDog.tvShow = "Dog City";
+        myDog.mySound = "Im not very tough";
+        document.getElementById("dog").innerHTML = "Hello, my name is " + myDog.name + ", I am a " + myDog.breed + " I was on the tv show" + myDog.tvShow + " and when i bark you know that " + myDog.mySound;
+
+    </script>
+    <script>
+        const myDogConst = {
+            name: "Ace Hart Private Eye Dog",
+            breed: "German Shepard",
+            tvShow: "Dog City",
+            mySound: "Im not very tough",
+            canTalk: Boolean,
+            myGreeting: function () {
+                document.getElementById("dog2").innerHTML = "Hello, my name is " + myDog.name + ", I am a " + myDog.breed + " I was on the tv show" + myDog.tvShow + " and when i bark you know that " + myDog.mySound;
+            }
+        }
+        myDogConst.myGreeting()
+    </script>
+
+
+
+
+</body>
+
+</html>
